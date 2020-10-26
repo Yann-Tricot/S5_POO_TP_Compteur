@@ -1,3 +1,6 @@
+package code;
+
+
 public class SonnerieDeclenchable extends Declenchable implements Sonnerie {
     private SonnerieC sonnerie;
 

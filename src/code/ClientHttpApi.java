@@ -1,3 +1,5 @@
+package code;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -30,8 +32,7 @@ public class ClientHttpApi {
                 .build();
         try {
             client.executor();
-            HttpResponse<String> response = client.send(request,
-                    HttpResponse.BodyHandlers.ofString());
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

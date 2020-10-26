@@ -1,24 +1,28 @@
+package code;
+
+import code.Radio;
+
 import javax.sound.sampled.*;
 import java.io.IOException;
 import java.net.URL;
 
-public class SonnerieC implements Sonnerie {
-    private URL url = null;
+public class RadioC implements Radio {
+    URL url = null;
 
     /**
-     * Permet de lancer une sonnerie
+     * Permet de lancer une musique de radio
      */
-    public SonnerieC() {
+    public RadioC() {
         try {
-            url = new URL("file:///C:\\Users\\Epulapp\\Documents\\CoursS5\\POO\\TP\\Montre\\son.wav");
+            url = new URL("file:///C:\\Users\\Epulapp\\Documents\\CoursS5\\POO\\TP\\Montre\\musique_radio.wav");
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    public void lancerSon() {
-
+    @Override
+    public void lancerRadio() {
         try {
             AudioInputStream audioIn = AudioSystem.getAudioInputStream(url);
             Clip clip = AudioSystem.getClip();
@@ -32,10 +36,9 @@ public class SonnerieC implements Sonnerie {
             e.printStackTrace();
         }
         try {
-            Thread.sleep(2000);
+            Thread.sleep(200000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 }

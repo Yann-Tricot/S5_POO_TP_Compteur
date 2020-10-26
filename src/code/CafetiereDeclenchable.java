@@ -1,3 +1,5 @@
+package code;
+
 public class CafetiereDeclenchable extends Declenchable implements Cafetiere {
     private CafetiereC cafetiere;
 

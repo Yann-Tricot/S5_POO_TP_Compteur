@@ -1,3 +1,5 @@
+package code;
+
 public abstract class Reveil extends Montre implements Runnable {
 
     private String fin;

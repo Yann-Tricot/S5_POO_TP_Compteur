@@ -1,3 +1,5 @@
+package code;
+
 public class RadioDeclenchable extends Declenchable implements Radio {
     private RadioC radio;
 
