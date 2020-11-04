@@ -1,6 +1,6 @@
 package test;
 
-import code.Compteur;
+import code.Classes.Compteur;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
