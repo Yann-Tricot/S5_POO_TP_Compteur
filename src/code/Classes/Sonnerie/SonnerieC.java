@@ -6,6 +6,7 @@ import javax.sound.sampled.*;
 import java.io.IOException;
 import java.net.URL;
 
+
 public class SonnerieC implements Sonnerie {
     private URL url = null;
 
@@ -14,7 +15,7 @@ public class SonnerieC implements Sonnerie {
      */
     public SonnerieC() {
         try {
-            url = new URL("file:///C:\\Users\\Epulapp\\Documents\\CoursS5\\POO\\TP\\Montre\\son.wav");
+            url = this.getClass().getResource("son.wav");
         } catch (Exception e) {
             e.printStackTrace();
         }

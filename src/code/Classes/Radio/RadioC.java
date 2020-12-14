@@ -14,7 +14,7 @@ public class RadioC implements Radio {
      */
     public RadioC() {
         try {
-            url = new URL("file:///C:\\Users\\Epulapp\\Documents\\CoursS5\\POO\\TP\\Montre\\musique_radio.wav");
+            url = this.getClass().getResource("musique_radio.wav");
         } catch (Exception e) {
             e.printStackTrace();
         }

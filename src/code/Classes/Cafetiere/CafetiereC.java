@@ -14,7 +14,7 @@ public class CafetiereC implements Cafetiere {
      */
     public CafetiereC() {
         try {
-            url = new URL("file:///C:\\Users\\Epulapp\\Documents\\CoursS5\\POO\\Montre\\son_cafetiere.wav");
+            url = this.getClass().getResource("son_cafetiere.wav");
         } catch (Exception e) {
             e.printStackTrace();
         }
