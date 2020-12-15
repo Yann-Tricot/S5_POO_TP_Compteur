@@ -1,27 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="code.UI.Window">
-  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="4" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="557" height="436"/>
+      <xy x="20" y="20" width="823" height="347"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
       <component id="e0447" class="javax.swing.JRadioButton" binding="sonnerie">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="248" height="20"/>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false">
+            <preferred-size width="175" height="20"/>
+            <maximum-size width="175" height="20"/>
           </grid>
         </constraints>
         <properties>
+          <enabled value="true"/>
           <text value="code.Interfaces.Sonnerie"/>
+        </properties>
+      </component>
+      <component id="fd299" class="javax.swing.JLabel" binding="label">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="220" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Choisissez le temps que vous voulez mettre (h:m:s) :"/>
+        </properties>
+      </component>
+      <hspacer id="d7797">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="1"/>
+            <maximum-size width="5" height="1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="b8430" class="javax.swing.JLabel" binding="Time">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0:0:0"/>
+        </properties>
+      </component>
+      <component id="8704b" class="javax.swing.JLabel" binding="Temps">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Temps :"/>
+        </properties>
+      </component>
+      <component id="8f88f" class="javax.swing.JRadioButton" binding="doSMS">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Prévenir par SMS ?"/>
+        </properties>
+      </component>
+      <component id="85dd8" class="javax.swing.JTextField" binding="num">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="exemple : 0602030405"/>
         </properties>
       </component>
       <component id="4e463" class="javax.swing.JRadioButton" binding="radio">
         <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="172" height="20"/>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="2" use-parent-layout="false">
+            <preferred-size width="175" height="20"/>
+            <maximum-size width="175" height="20"/>
           </grid>
         </constraints>
         <properties>
@@ -32,76 +87,54 @@
           <hideActionText class="java.lang.Boolean" value="false"/>
         </clientProperties>
       </component>
+      <component id="2b38a" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="172" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Lancer le réveil"/>
+        </properties>
+      </component>
+      <hspacer id="ed086">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="10" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
       <component id="9f35c" class="javax.swing.JRadioButton" binding="cafetiere">
         <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false">
+            <preferred-size width="175" height="20"/>
+            <maximum-size width="175" height="20"/>
+          </grid>
         </constraints>
         <properties>
           <text value="code.Interfaces.Cafetiere"/>
         </properties>
       </component>
-      <component id="2b38a" class="javax.swing.JButton" binding="button1" default-binding="true">
-        <constraints>
-          <grid row="3" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="172" height="30"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Button"/>
-        </properties>
-      </component>
       <component id="c4284" class="javax.swing.JTextField" binding="compteur">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="3" use-parent-layout="false">
+            <preferred-size width="100" height="-1"/>
           </grid>
         </constraints>
         <properties>
+          <enabled value="true"/>
           <text value=""/>
+          <toolTipText value="exemple &gt; 5:15:00"/>
         </properties>
       </component>
-      <component id="fd299" class="javax.swing.JLabel" binding="label">
+      <hspacer id="27f19">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="248" height="16"/>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="1"/>
+            <maximum-size width="5" height="1"/>
           </grid>
         </constraints>
-        <properties>
-          <text value="Choisissez le temps que vous voulez mettre (h:m:s) :"/>
-        </properties>
-      </component>
-      <component id="8704b" class="javax.swing.JLabel" binding="Temps">
-        <constraints>
-          <grid row="3" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Temps :"/>
-        </properties>
-      </component>
-      <component id="b8430" class="javax.swing.JLabel" binding="Time">
-        <constraints>
-          <grid row="3" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="0:0:0"/>
-        </properties>
-      </component>
-      <component id="85dd8" class="javax.swing.JTextField" binding="num">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="8f88f" class="javax.swing.JRadioButton" binding="doSMS">
-        <constraints>
-          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Prévenir par SMS ?"/>
-        </properties>
-      </component>
+      </hspacer>
     </children>
   </grid>
 </form>
